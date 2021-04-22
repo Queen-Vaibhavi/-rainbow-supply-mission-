@@ -1,5 +1,3 @@
-//mam please see the code from here.I am sending the output in feedback section.
-
 var helicopterIMG, helicopterSprite, packageSprite,packageIMG;
 var packageBody,ground;
 var rect1,rect2,rect3,rect4,rect5,rect6,rect7;
