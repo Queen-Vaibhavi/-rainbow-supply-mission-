@@ -1,8 +1,6 @@
 var helicopterIMG, helicopterSprite, packageSprite,packageIMG;
 var packageBody,ground;
 var rect1,rect2,rect3,rect4,rect5,rect6,rect7;
-
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -123,8 +121,9 @@ helicopterSprite.x = helicopterSprite.x-10;
         packageSprite.x = packageBody.position.x; 
 	    packageSprite.y = packageBody.position.y;
 
-	  if(keyCode === DOWN_ARROW){
-         packageSprite.velocityY = 20;
+		//Hi Vaibhavi, You don't need to change velocityY position of the packageSprite when the down arrow key is pressed.
+		// That is bcoz packagesprite is already following the position of the package body.
+		 if(keyCode === DOWN_ARROW){
           Matter.Body.setStatic(packageBody,false);
 	  }
 
